@@ -12,21 +12,29 @@ public class SimpleCalculatorTest {
 		assertEquals(calc.add(1, 1), 2);
 	}
 	@Test
-	public void testminus()
+	public void testMinus()
 	{
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.minus(5, 3), 2);
 	}
 	@Test
-	public void testmultiply()
+	public void testMultiply()
 	{
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.multiply(5, 3), 15);
 	}
 	@Test
-	public void testdivide()
+	public void testDivide()
 	{
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.divide(6, 3), 2);
 	}
+	@Test
+	public void testDivideByZero()
+	{
+		SimpleCalculator calc = new SimpleCalculator();
+		assertEquals(calc.divide(6, 0), 0);
+	}
+
+
 }
